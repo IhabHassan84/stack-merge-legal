@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stack &amp; Merge: Privacy Policy</title>
+<meta name="description" content="How Stack &amp; Merge collects, uses and shares data.">
+<style>
+  :root { --bg:#f7f3ea; --fg:#2a2620; --muted:#6f665a; --card:#fffdf7; --line:#d9d0bd; --accent:#8a6418; --warn:#fff3b8; --warnfg:#4d3d00; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17140f; --fg:#eee8da; --muted:#a79d8b; --card:#201c15; --line:#3a3326; --accent:#e9ce6b; --warn:#4a3d0a; --warnfg:#ffe9a0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 8px 0 4px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 8px; border-top: 1px solid var(--line); padding-top: 20px; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 22px 0 4px; }
+  p, li { margin: 8px 0; }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; font-size: .93rem; display:block; overflow-x:auto; }
+  th, td { text-align: left; padding: 9px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: color-mix(in srgb, var(--card) 85%, var(--accent)); }
+  tr:last-child td { border-bottom: 0; }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; font-size: .9em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="muted">Stack &amp; Merge (package <code>ai.stackmerge.app</code>)<br>
+Last updated: October 7, 2026<br>
+Developer: Ihab Hassan (independent developer)<br>
+Contact: <a href="mailto:ai.wise.au@gmail.com">ai.wise.au@gmail.com</a></p>
+
+<p>Stack &amp; Merge is developed and maintained by Ihab Hassan as an independent project. This policy explains what information the Stack &amp; Merge mobile game ("the app") collects, why, who it is shared with, and the choices you have. We describe only what the app actually does at the time of writing.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>You do not create an account with an email address or password. The app signs you in <strong>anonymously</strong> and gives you a random player ID.</li>
+  <li>Your <strong>progress</strong> (coins, best score, power-up counts, daily streak) is stored on your device and in the cloud under that player ID.</li>
+  <li>Your <strong>score</strong>, optional <strong>display name</strong> and <strong>country</strong> (from your device's region setting) are public on the leaderboards.</li>
+  <li>The app shows <strong>ads</strong> through Google AdMob, which may use your advertising ID and device information.</li>
+  <li>Purchases are handled by <strong>Google Play</strong>; we never see your payment details.</li>
+  <li>Reminder notifications are created <strong>on your device</strong> and nothing about them is sent to us.</li>
+  <li>We do not sell personal information.</li>
+</ul>
+
+<h2>2. Information we collect</h2>
+<table>
+  <thead><tr><th>Information</th><th>Why we collect it</th><th>Where it goes</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Anonymous player ID</strong> (a random identifier created by Firebase Authentication when you first open the app)</td>
+      <td>To save your progress and leaderboard entry and to protect them from being changed by other players.</td>
+      <td>Google Firebase (Authentication and Cloud Firestore). Also stored on your device.</td>
+    </tr>
+    <tr>
+      <td><strong>Game progress and wallet</strong>: coins, best score, power-up counts, daily-reward streak, streak freezes, last claim day, a "last updated" time</td>
+      <td>To keep your progress saved in the cloud (it is restored whenever the same anonymous account is signed in; a fresh install normally starts a new anonymous account), and to run daily rewards.</td>
+      <td>Cloud Firestore, in a record that only your player ID can read or change. Also stored on your device.</td>
+    </tr>
+    <tr>
+      <td><strong>Leaderboard entry</strong>: your player ID, display name, best score, this week's best score and the week it belongs to, and your country code</td>
+      <td>To rank players. <strong>This record is public:</strong> anyone using the app can see your display name, country flag and scores.</td>
+      <td>Cloud Firestore (publicly readable record).</td>
+    </tr>
+    <tr>
+      <td><strong>Display name</strong> (optional, up to 24 characters, chosen by you)</td>
+      <td>Shown next to your score. If you do not choose one, a generic name such as "Player 1a2b" is used.</td>
+      <td>Cloud Firestore (public, as part of the leaderboard entry). Also stored on your device.</td>
+    </tr>
+    <tr>
+      <td><strong>Country</strong> (a two-letter code taken from your device's language/region setting; the app does <strong>not</strong> use GPS, network location or an IP lookup for this)</td>
+      <td>To build the "Near By" leaderboard of players in your country and neighbouring countries.</td>
+      <td>Cloud Firestore (public, as part of the leaderboard entry).</td>
+    </tr>
+    <tr>
+      <td><strong>Purchase information</strong> (which power-up pack you bought, purchase token and status)</td>
+      <td>To deliver and confirm the item you bought. Payment details (card, address) are handled only by Google Play.</td>
+      <td>Google Play Billing. The resulting power-up counts are saved with your progress.</td>
+    </tr>
+    <tr>
+      <td><strong>Advertising information</strong>: advertising ID, IP address, device and app information (such as device model, operating system version, language, app version) and ad interaction events</td>
+      <td>To load, show and measure ads, and to prevent ad fraud. See section 5.</td>
+      <td>Google AdMob / Google Mobile Ads SDK.</td>
+    </tr>
+    <tr>
+      <td><strong>Technical data from Google services</strong>: for example a Firebase installation identifier and basic diagnostics created by the Firebase and Google Play services SDKs</td>
+      <td>To make the Firebase services work and keep them secure.</td>
+      <td>Google. The app does not include Firebase Analytics or Crashlytics.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>What we do not collect:</strong> your name, email address, phone number, contacts, precise or approximate location from sensors, photos, microphone or camera data, or health or financial information. The app does not ask for these permissions.</p>
+
+<h3>Reporting a display name</h3>
+<p>Display names are checked against a filter before they are saved, but no filter is perfect. If you see an inappropriate display name on a leaderboard, email <a href="mailto:ai.wise.au@gmail.com">ai.wise.au@gmail.com</a> with the subject "Stack &amp; Merge Name Report" and the name you saw; we will remove it. Reports are handled by email.</p>
+
+<h3>Information stored only on your device</h3>
+<p>Your settings (sound, music, vibration, difficulty), your best score, wallet and streak counters, whether you have seen certain prompts, and your choice about reminder notifications are stored locally with the Android preferences system. Reminder notifications are scheduled by your device; the app does not send notification content, or the fact that you enabled notifications, to our servers, and it does not use a push-notification service.</p>
+
+<h2>3. How we use information</h2>
+<ul>
+  <li>To run the game: save and restore progress, grant daily rewards and purchases, keep leaderboards.</li>
+  <li>To show ads and measure them (through Google), which funds the free game.</li>
+  <li>To prevent cheating and abuse of the leaderboards and wallet.</li>
+  <li>To answer your questions and requests, including deletion requests.</li>
+</ul>
+<p>We do not use your information for profiling beyond what advertising partners do under the settings in section 5, and we do not make automated decisions that have legal effects on you.</p>
+
+<h2>4. Who we share information with</h2>
+<p>We do not sell personal information. Information is processed by these providers acting for us or on their own terms:</p>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore): stores the anonymous account and the data in section 2. <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li><strong>Google AdMob / Google Mobile Ads</strong>: ads. <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></li>
+  <li><strong>Google Play</strong> (Billing and the Play Store): purchases. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li><strong>Other players</strong>: your leaderboard entry is public, as described above.</li>
+  <li><strong>Authorities or advisers</strong>: if the law requires it, or to protect our rights, we may disclose information to the extent necessary.</li>
+</ul>
+
+<h2>5. Advertising and your choices</h2>
+<p>The app shows two kinds of ads served by Google AdMob: rewarded videos you choose to watch (for example to refill a power-up or continue after a game over) and short ads between some games. AdMob may collect and use the Android advertising ID, IP address, device information and ad interactions to deliver and measure ads, which can include personalised ads.</p>
+<ul>
+  <li><strong>Ads personalisation:</strong> on your device go to Settings &gt; Google &gt; Ads (or Settings &gt; Privacy &gt; Ads) to reset your advertising ID or opt out of ads personalisation.</li>
+  <li><strong>Consent in the EEA, UK and Switzerland:</strong> where the law requires it, the app asks for your consent before any ad is requested, using Google's consent form (the Google User Messaging Platform). You can review or change your choice at any time under <em>Settings &gt; Your data &gt; Privacy options</em>, which appears wherever the consent form applies. Until you have made a choice where consent is required, the app shows no ads.</li>
+  <li>The app also works without personalised ads; non-personalised ads are still shown.</li>
+</ul>
+
+<h2>6. Children</h2>
+<p>Stack &amp; Merge is not directed at children under the age of 13. We do not knowingly collect personal information from anyone under 13. If you believe a child has provided personal information through the app, contact us at <a href="mailto:ai.wise.au@gmail.com">ai.wise.au@gmail.com</a> and we will promptly delete it.</p>
+
+<h2>7. How long we keep information</h2>
+<ul>
+  <li>Your progress record and leaderboard entry are kept for as long as the anonymous account exists, until you delete them (in the app or by email, see section 8).</li>
+  <li>Data stored only on your device is deleted when you uninstall the app or clear its storage.</li>
+  <li>Google keeps advertising, billing and Firebase data under its own policies.</li>
+</ul>
+
+<h2 id="deletion">8. Deleting your data and your rights</h2>
+<p><strong>In the app:</strong> open <strong>Settings &gt; Your data &gt; Delete my data</strong> and confirm. This immediately deletes your progress record and your leaderboard entry from our servers, removes your anonymous account, erases everything the app stored on your device and starts the game over as if freshly installed. It cannot be undone, and purchases are not refunded. Deletion needs an internet connection; if it cannot reach our servers the app tells you and changes nothing, so you can try again.</p>
+<p><strong>By email:</strong> if you can no longer open the app, email <a href="mailto:ai.wise.au@gmail.com">ai.wise.au@gmail.com</a> with the subject <strong>"Stack &amp; Merge Data Deletion Request"</strong>. Include your <strong>player ID</strong> (shown under <em>Settings &gt; Your data &gt; Player ID</em>; tapping it copies the full ID) so that we can find your records. If you no longer have the ID, include your display name, country and best score, and we may ask for additional proof of ownership. We will process your request within <strong>30 days</strong> and confirm by email once it is complete. A short step-by-step page is at <a href="data-deletion.html">data-deletion.html</a>.</p>
+<p>Depending on where you live (for example the EEA, UK, Switzerland, California or Brazil) you may have the right to access, correct, delete or export your personal information, to object to or restrict certain processing, to withdraw consent, and to lodge a complaint with your data-protection authority. Email us to exercise these rights. Because the app has no email address or name tied to your player ID, we can only act on a request if we can reasonably identify your record.</p>
+<p>Deleting your data also removes your public leaderboard entry. Reinstalling the app or clearing its data on your device normally creates a <em>new</em> anonymous player ID with a new empty record; the old record is not deleted by this (use the steps above first if you want it gone).</p>
+
+<h2>9. Security and international transfers</h2>
+<p>Data sent between the app and Firebase, AdMob and Google Play is encrypted in transit (HTTPS/TLS). Access to the progress record is restricted by security rules so that only the signed-in player ID can read or change it; the leaderboard record is publicly readable by design. No method of storage or transmission is completely secure.</p>
+<p>Google processes data in many countries, including the United States, under its own safeguards such as standard contractual clauses. The Firestore database is located in the United States (<code>nam5</code>).</p>
+
+<h2>10. Legal bases (EEA / UK users)</h2>
+<ul>
+  <li>Providing the game and your progress: performance of a contract (our terms of use of the game).</li>
+  <li>Leaderboards (public display name, country and score): our legitimate interest in running a competitive game, and your choice of display name.</li>
+  <li>Personalised advertising: your consent where required.</li>
+  <li>Preventing cheating and abuse: our legitimate interests.</li>
+</ul>
+
+<h2>11. Changes to this policy</h2>
+<p>If we change what the app collects or how it is used we will update this page and its effective date, and for material changes we will tell you in the app or in the store listing.</p>
+
+<h2>12. Contact</h2>
+<p>Ihab Hassan<br>
+Email: <a href="mailto:ai.wise.au@gmail.com">ai.wise.au@gmail.com</a></p>
+
+</main>
+</body>
+</html>
